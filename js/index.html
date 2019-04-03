@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+  Сeкунд прошло <span id="count">1</span>
+
+  <p>Начало документа...</p>
+ <!--  <script >
+  var value=prompt('Каково «официальное» название JavaScript?','');
+      if (value=='ECMAScript') {
+          alert('Верно!');
+      } else { 
+          alert('Не знаете? ECMAScript!');
+      }
+  </script> -->
+<!--   <script>
+   
+     var value = +prompt('Введите число','');
+   
+   if (value > 0) {
+  function showMessage() {
+  alert( 1 );}
+   } else if (value < 0) {
+     function showMessage() {
+  alert( -1 );}
+   } else if (value ==0) {
+     function showMessage() {
+  alert( 0 );}
+   }
+   
+   showMessage();
+   </script>  -->
+   
+<!--   <script >
+  var userName = prompt('Кто пришёл?', '');
+  
+  if (userName == 'Админ') {
+  
+  var pass = prompt('Пароль?', '');
+  
+  if (pass == 'Чёрный Властелин') {
+    alert( 'Добро пожаловать!' );
+  } else if (pass == null) { // (*)
+    alert( 'Вход отменён' );
+  } else {
+    alert( 'Пароль неверен' );
+  }
+  
+  } else if (userName == null) { // (**)
+  alert( 'Вход отменён' );
+  
+  } else {
+  
+  alert( 'Я вас не знаю' );
+  
+  }
+           
+  </script> -->
+  
+<!-- <script>
+    var browser = prompt('Vvedite vash browser','');
+                        )
+if(browser == 'IE') {
+  alert('О, да у вас IE!');
+}
+    else if (browser == 'Chrome') {
+  alert('Да, и эти браузеры мы поддерживаем');
+} 
+     else if (browser == 'Opera') {
+  alert('Да, и эти браузеры мы поддерживаем');
+} 
+     else if (browser == 'Safari') {
+  alert('Да, и эти браузеры мы поддерживаем');
+} 
+     else if (browser == 'Firefox') {
+  alert('Да, и эти браузеры мы поддерживаем');
+} 
+    else {
+  alert('Мы надеемся, что и в вашем браузере все ок!');
+}
+
+</script>  -->
+  
+<!--   <script>
+   var counter=0;
+      function timer() {
+          counter++;
+          document.getElementById('count').innerHTML=counter;
+          setTimeout("timer()",1000);
+      }
+   
+  </script>
+   -->
+<p>Это <img src="img/cat.png" alt="Кошка"> в
+<img src="img/hat.png" alt="сапожках">.</p>
+<p><button onclick="replaceImages()">Заменить</button></p
+>
+<script>
+function replaceImages() {
+var images = document.body.getElementsByTagName("img"
+);
+for (var i = images.length - 1; i >= 0; i--) {
+var image = images[i];
+if (image.alt) {
+var text = document.createTextNode(image.alt);
+image.parentNode.replaceChild(text, image);
+}
+}
+}
+</script>
+  
+</body>
+
+</html>

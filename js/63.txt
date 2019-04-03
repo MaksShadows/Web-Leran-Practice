@@ -1,0 +1,50 @@
+/*var user = {
+  firstName:'Maks',
+  surname:'Lykanenko',
+  sayHi: function(){
+  console.log(this.firstName +''+ this.surname);}
+};
+user.sayHi(); */
+
+var user = {
+  firstName:'Maks',
+  surname:'Lykanenko',
+  sayHi: function(){
+    showfullName(this);
+  }
+};
+
+function showfullName(firstNamedObj) {
+  console.log( firstNamedObj.firstName);
+}
+function showfullName(surnamedObj) {
+  console.log(surnamedObj.surname);
+}
+
+user.sayHi(firstNamedObj);
+
+
+
+function sayHiBye(firstName, lastName) {
+
+  alert( "Привет, " + getFullName() );
+  alert( "Пока, " + getFullName() );
+
+  function getFullName() {
+    return firstName + " " + lastName;
+  }
+
+}
+
+
+var  user={
+  firstName:'Maks',
+  lastName:'Lykanenko'
+};
+function showFullName() {
+  alert( this.firstName + " " + this.lastName );
+}
+ 
+ showFullName.call(user)
+
+sayHiBye("Вася", "Пупкин");
